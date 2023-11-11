@@ -173,7 +173,7 @@ footer .footer-card
         width: 60%;
     }
     #menu li{
-        margin:300px auto;
+        margin:30px auto;
     }
     #content{
         flex-direction: column;
@@ -188,6 +188,9 @@ footer .footer-card
     #textos{
         flex-direction: column;
         margin-bottom: 40px;
+    }
+    #textos #titulo{
+        width: 100%;
     }
     #textos>p,#textos #descripcion{
         width: 100%;
@@ -209,6 +212,6 @@ footer .footer-card
     }
     #content section #baner #img-mobile{
         
-        display: none;
+        display: block;
     }
 }
