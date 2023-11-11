@@ -1,0 +1,214 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#container{
+    margin: 0 auto;
+    width:80%;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+header #menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#menu{
+    width: 45%;
+    list-style: none;
+}
+#menu li a{
+    text-decoration: none;
+    color: #4b4b52;
+}
+#menu li a:hover{
+    color: #eaae54;
+}
+#content{
+    display: flex;
+    justify-content: space-between;
+}
+#content section{
+    width: 60%;
+
+}
+#content section #baner #img-desktop{
+    width: 100%;
+}
+#content section #baner #img-mobile{
+    width: 100%;
+    display: none;
+}
+#textos{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+#textos > h1{
+    width: 42%;
+    font-size: 45px;
+    font-weight: 600;
+}
+#textos #descripcion{
+    width: 50%;
+}
+#descripcion > p{
+    font-size: 14px;
+    line-height: 25px;
+    padding-right: 30px;
+    margin-bottom: 47px;
+}
+#descripcion button{
+    background-color: #d95449;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 12px;
+    padding: 12px 15px;
+    border: none;
+}
+#descripcion button:hover{
+    background-color: #00001a;
+    border-radius: 20px;
+}
+#content aside{
+    width: 35%;
+   background-color: #00001a;
+    padding: 20px;
+}
+#content aside .card:nth-child(3){
+    border-top: 3px solid #ccc;
+    border-bottom: 3px solid #ccc;
+}
+#content aside h1{
+    color: #eaae54;
+    margin: 25px 0;
+    font-size: 35px;
+}
+#content aside{
+color: white;
+}
+#content .card{
+    padding: 15px 0;
+}
+/* .borde{
+    border-top: 3px solid #ccc;
+    border-bottom: 3px solid #ccc;
+} */
+#content .card h3 a{
+    text-decoration: none;
+    color: white;
+}
+#content .card h3 a:hover{
+    color: #eaae54; 
+}
+#content .card h3{
+    margin: 15px 0;
+}
+footer
+{
+    display: flex;
+    margin-top: 40px;
+}
+footer .footer-card
+{
+    display: flex;
+    justify-content: space-between;
+    width: 31%;
+}
+.footer-card #img-footer{
+    width: 20%;
+}
+.footer-card #txt{
+    width: 75%;
+}
+.footer-card #txt h2{
+    color:rgb(177, 158, 158);
+    margin-bottom:10px;
+}
+.footer-card #txt h5{
+    margin-bottom: 10px;
+}
+.footer-card #txt p{
+    font-size: 12px ;
+}
+.footer-card #img-footer img{
+    width: 100%;
+}
+#hamburguer,#close{
+    display:none;
+}
+@media (max-width:480px)
+{
+    #hamburguer,#close{
+        display:block;
+        position: absolute;
+        top: 38px;
+        right: 10%;
+    }
+    #close{
+        display: none;
+        z-index: 10;
+    }
+    #logo{
+        width: 10%;
+    }
+    #logo img{
+        width:100%;
+    }
+
+    header #menu{
+        display: none;
+        background-color: #d0cccc;
+        position:absolute;
+        top:0;
+        right:0;
+        flex-direction:column;
+        padding: 60px 0;
+        width: 60%;
+    }
+    #menu li{
+        margin:300px auto;
+    }
+    #content{
+        flex-direction: column;
+    }
+    #content section{
+        width: 100%;
+    }
+    #content aside{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    #textos{
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    #textos>p,#textos #descripcion{
+        width: 100%;
+    }
+    footer{
+        flex-direction: column;
+    }
+    footer .footer-card{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .footer-card #img-footer{
+        width: 30%;
+        margin-right: 20px;
+    }
+    #content section #baner #img-desktop{
+        
+        display: none;
+    }
+    #content section #baner #img-mobile{
+        
+        display: none;
+    }
+}
